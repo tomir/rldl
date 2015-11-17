@@ -1,0 +1,80 @@
+{
+	"Offer_is_unavailable": "La oferta no está disponible.",
+	"This_offer_requires_sharing": "La oferta requiere la función de compartir activada.",
+	"Turn_on": "Encender",
+	"Get_voucher": "Obtener el voucher",
+	"Get_deal": "Obtener la oferta",
+	"Valid_to": "Válido hasta",
+	"Show_more_offers": "Mostrar más ofertas",
+	"Do_you_want_to_find_out_about_next_one": "¿Quieres saber primero sobre la siguiente oferta?",
+	"This_offer_has_come_to_an_end": {
+		"m": "Hola {{{actor}}}, esta oferta ya no está actual.",
+		"f": "Hola {{{actor}}}, esta oferta ya no está actual.",
+		"default": "¡Hola! Esta oferta ya no está actual."
+	},
+	"Get_notification": "Recibir una notificación",
+	"Thanks_You_will_be_notified": "Gracias. Te mantendremos informado.",
+	"Campaign_terms_of_use": "Condiciones de la oferta",
+	"App_terms_and_privacy_policy": "Condiciones y política de privacidad de la app",
+	"Log_out": "Salir",
+	"Log_in": "Acceder",
+	"Login_using_your_favorite_platform": "Acceder a través de la plataforma favorita.",
+	"You_must_log_in": "Debes acceder.",
+	"Hello": {
+		"m": "¡Hola {{{actor}}}!",
+		"f": "¡Hola {{{actor}}}!",
+		"default": "¡Hola!"
+	},
+	"Share": "Compartir",
+	"Sharing_is_unavailable": "Función de compartir no disponible",
+	"Turn_on_sharing": "Activar la función de compartir ",
+	"Sharing_is_not_available_on_this_platform": "La función de compartir no está disponible después de acceder a través de la plataforma seleccionada.",
+	"This_option_requires_permission_to_publish_on_users_behalf": "Esta opción requiere el permiso de publicación. Pulsar OK para dar el permiso.",
+	"Close": "Cerrar",
+	"OK": "OK",
+	"Your_offer": {
+		"m": "{{{actor}}}, Tu oferta {{{value}}}",
+		"f": "{{{actor}}}, Tu oferta {{{value}}}",
+		"default": "Tu oferta {{{value}}}"
+	},
+	"Your_voucher": {
+		"m": "{{{actor}}}, Tu voucher {{{value}}}",
+		"f": "{{{actor}}}, Tu voucher {{{value}}}",
+		"default": "Tu vourcher {{{value}}}"
+	},
+	"Your_offer_from_brand": {
+		"m": "{{{actor}}}, Tu oferta {{{value}}} de {{{brand}}}",
+		"f": "{{{actor}}}, Tu oferta {{{value}}} de {{{brand}}}",
+		"default": "Tu oferta {{{value}}} de {{{brand}}}"
+	},
+	"Your_voucher_from_brand": {
+		"m": "{{{actor}}}, Tu voucher {{{value}}} de {{{brand}}}",
+		"f": "{{{actor}}}, Tu voucher {{{value}}} de {{{brand}}}",
+		"default": "Tu voucher {{{value}}} de {{{brand}}}"
+	},
+	"Use_code": "Usar el código",
+	"Write_post_body": "Añadir el contenido del post...",
+	"Free_delivery": "Entrega gratuita",
+	"Second_product_free": "Otro producto gratis",
+	"Buy_one_get_one_free": "Compra uno, recibe otro gratis ",
+	"Get_discount": "Recibir el descuento",
+	"Offer_of_the_month": "Oferta del mes",
+	"Free_gifts": "Regalo gratuito",
+	"Get_gift": "Recibir el regalo",
+	"Buy_now": "¡Compra ahora!",
+	"Go_to_store": "Ir a la tienda",
+	"Use_promo_codes": "Usar el código promocional",
+	"Add_to_cart": "Añadir al carrito",
+	"Proceed_to_checkout": "Hacer pedido",
+	"Continue": "Continuar",
+	"Get_it_now": "¡Compra ahora!",
+	"Browse_the_collection": "Ver la colección",
+	"Explore_other_items": "Ver otros productos ",
+	"Read_more": "Leer más ",
+	"Download_now": "¡Descarga ahora!",
+	"Driving_directions": "Cómo llegar",
+	"For_free": "Gratis",
+	"Dont_miss_it": "¡No te pierdas!",
+	"Your_account": "Tu cuenta",
+	"Realdeal_company_details": "Real Deal Sp. z o.o. (Ltd), c/ Ligocka 103, 40-568 Katowice, Polonia, NIF 6342825534"
+}

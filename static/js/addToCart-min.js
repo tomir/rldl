@@ -1,0 +1,1 @@
+!function(n,$){if(null==$)throw new Error;var e=new RLDL.Route,o=e.request("u"),t=e.request("c"),u=$.Deferred();$(function(){var n=$("#atci"),e=$("#atcf");n.load(function(){n.unbind("load"),u.resolve()}),n.attr("src",t)}),u.done(function(){n.setTimeout(function(){n.location=o},1e3)})}("undefined"!=typeof window?window:this,"function"==typeof jQuery?jQuery:null);

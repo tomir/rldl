@@ -1,0 +1,20 @@
+cron:
+- description: Create reminders
+  url: /tasks/reminders
+  schedule: every 1 mins
+  
+- description: Create announcements
+  url: /tasks/announcements
+  schedule: every 1 mins
+
+- description: Send posts
+  url: /tasks/posts
+  schedule: every 1 mins
+
+- description: Send notifications
+  url: /tasks/notifications
+  schedule: every 1 mins
+
+- description: GA pageviews
+  url: /tasks/ga/day
+  schedule: every 1 mins

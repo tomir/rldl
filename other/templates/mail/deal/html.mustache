@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+	<head>
+		<meta charset="UTF-8">
+		<link href='https://fonts.googleapis.com/css?family=Open+Sans:300,400,600&subset=latin,greek,latin-ext,cyrillic,greek-ext,cyrillic-ext' rel='stylesheet' type='text/css'>
+		<link href='https://fonts.googleapis.com/css?family=Inconsolata:700' rel='stylesheet' type='text/css'>
+	</head>
+	<body style="background-color:#fff;color:#000;font-size:18px;font-family:'Open Sans',Helvetica,Arial,sans-serif;font-weight:300;line-height:28px;-webkit-text-size-adjust:none;-webkit-backface-visibility:hidden;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;text-align:center;padding:48px;margin:0;">
+		<p style="color: #000;margin: 0;padding: 0">{{#i18n}}{
+		"view": {
+			"actor": "<span style=\"font-weight: 600\">{{user.first_name}}</span>",
+			"brand": "<span style=\"font-style: italic;\">{{{campaign.campaign_brand}}}</span>",
+			"value": "{{^deal.variant.variant_cta}}<span style=\"font-weight: 600\">{{^deal.is_voucher}}-{{/deal.is_voucher}}{{deal.variant.variant_value}}{{#deal.currency}} {{currency_code}}{{/deal.currency}}{{^deal.currency}}%{{/deal.currency}}</span>{{/deal.variant.variant_cta}}"
+		}, "template": {
+			"string": "Your {{#deal.is_voucher}}voucher{{/deal.is_voucher}}{{^deal.is_voucher}}offer{{/deal.is_voucher}}{{#campaign.campaign_brand}} from brand{{/campaign.campaign_brand}}",
+			"variant": "{{user.gender}}"
+		} }{{/i18n}}</p>
+		{{#deal.images.code}}<p style="margin: 0;padding: 14px 0 0"><img src="{{#barcode}}{ "code": "{{deal.variant.code_value}}", "url": "{{deal.images.code.url}}" }{{/barcode}}" style="max-width: 300px;"></p>{{/deal.images.code}}
+		<p style="margin: 0;padding: 8px 0 0"><span style="display:block;overflow:hidden;width:0;height:0;border:4px transparent solid;border-bottom-color:#ddd;margin: 0 auto"></span><span style="text-decoration: none;font-family:'Inconsolata','Andale Mono',Courier;font-weight:700;font-size:24px;display:inline-block;word-wrap:break-word;color:#333;border-radius:2px;padding:8px 12px;line-height:22px;text-align:center;background-color:#ddd">{{deal.variant.code_value}}</span></p>
+		{{#deal.deal_info}}<p style="color: #000;margin: 0;padding: 14px 0 0;font-size: 14px;line-height: 22px;">{{#html}}{{deal.deal_info}}{{/html}}</p>{{/deal.deal_info}}
+		{{#deal.variant.code_url}}<p style="margin: 0;padding: 6px 0 0;font-weight: 600;"><a href="{{deal.variant.code_go_url}}" target="_blank" style="display: inline-block;text-decoration: none; color: #fff; background-color: #6a86fa; border-radius: 2px; padding: 5px 10px;">{{#deal.variant.code_url_text}}{{#i18n}}{{deal.variant.code_url_text}}{{/i18n}}{{/deal.variant.code_url_text}}{{^deal.variant.code_url_text}}{{#i18n}}Use code{{/i18n}}{{/deal.variant.code_url_text}}</a></p>{{/deal.variant.code_url}}
+		{{#campaign.images.map}}<div style="font-size: 0;margin: 48px auto 0;padding: 0; width: 100%; max-width: 650px; min-width: 150px;">
+			<img src="{{#image}}{{url}}?s=1300{{/image}}" style="width: 100%; height: auto; border: 0; padding: 0; margin: 0;"/>
+		</div>{{/campaign.images.map}}
+		<div style="margin: 48px auto 0;padding: 0; width: 100%; max-width: 622px; min-width: 150px; border: 1px solid #fbfbfb; border-radius: 3px;box-shadow:0 0 1px 0 rgba(75,75,75,0.05)">
+			<table cellpadding="0" cellspacing="0" style="border: 0; margin: 0 auto; width: 100%; font-size: 14px; text-align: left;">
+				<tr style="margin: 0;padding: 0;">
+					{{#deal.images.ico}}<td style="margin: 0;padding: 12px 0 12px 12px; width: 62px;vertical-align: middle">
+						<img src="{{#image}}{{url}}?s=124{{/image}}" style="width: 62px; height: 62px;">
+					</td>{{/deal.images.ico}}
+					<td style="color: #000;padding: 12px;font-size: 14px;line-height: 22px;font-family:'Open Sans',Helvetica,Arial,sans-serif">
+						<h1 style="font-size: 18px; line-height: 28px; font-weight: 600; margin: 0;padding: 0 0 6px;vertical-align: middle">{{deal.deal_name}}</h1>{{#html}}{{deal.deal_description}}{{/html}}
+					</td>
+				</tr>
+			</table>
+			<p style="margin: 0;padding: 0 0 12px;font-size: 12px;line-height: 18px;"><a href="{{campaign.campaign_url}}" target="_blank" style="text-decoration: underline; color: #6a86fa">{{#i18n}}Show more offers{{/i18n}}</a></p>
+		</div>
+		<div style="margin: 48px auto 0;padding: 0; width: 100%; max-width: 622px; min-width: 150px; border-top: 1px dashed #e3e3e3;font-size: 12px;line-height: 18px; color: #b2b2b2;">
+			<p style="margin: 0;padding: 6px 0 0;">{{#i18n}}Realdeal company details{{/i18n}}</p>
+			<p style="margin: 0;padding: 0;"><a href="{{campaign.campaign_terms_url}}" target="_blank" style="text-decoration: underline; color: #b2b2b2; margin: 0 3px;">{{#i18n}}Campaign terms of use{{/i18n}}</a> <a href="{{#config}}app_terms_url{{/config}}" target="_blank" style="text-decoration: underline; color: #b2b2b2; margin: 0 3px;">{{#i18n}}App terms and privacy policy{{/i18n}}</a> <a href="{{#config}}user_account_url{{/config}}" target="_blank" style="text-decoration: underline; color: #b2b2b2; margin: 0 3px;">{{#i18n}}Your account{{/i18n}}</a></p>
+		</div>
+	</body>
+</html>

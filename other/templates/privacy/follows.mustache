@@ -1,0 +1,9 @@
+<div class="rows">
+	<div class="row">
+		<h2>{{#i18n}}Following{{/i18n}}</h2>
+		<ul>{{#campaigns}}
+			{{^campaign_deleted}}<li id="follow-{{campaign_id}}"><a href="https://realde.al/{{campaign_alias}}" target="_blank">{{campaign_brand}} ({{campaign_alias}})</a> <a class="unfollow" href="#" data-action="unfollow/{{campaign_id}}">{{#i18n}}Unfollow{{/i18n}}</a></li>{{/campaign_deleted}}
+		{{/campaigns}}
+		</ul>
+	</div>
+</div>

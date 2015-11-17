@@ -1,0 +1,8 @@
+<div class="outer">
+	<div class="body">
+		{{#msg}}<p>{{#i18n}}{{msg}}{{/i18n}}</p>{{/msg}}
+		<div class="buttons">{{#buttons}}
+			<a href="{{#url}}{{url}}{{/url}}{{^url}}#{{/url}}" class="button"{{#action}} data-action="{{action}}"{{/action}}>{{#i18n}}{{title}}{{/i18n}}</a>{{/buttons}}
+		</div>
+	</div>
+</div>

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+	<head>
+		<title>TODO supply a title</title>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+		<link rel="stylesheet" type="text/css" href="css/imgselector-default.css" />
+	</head>
+	<body>
+		<div class="image" style="width: 638px; height: 359px; background: url('image.jpg');"></div>
+
+		<form action="" method="post">
+			<input type="hidden" name="x1" value="" />
+			<input type="hidden" name="y1" value="" />
+			<input type="hidden" name="x2" value="" />
+			<input type="hidden" name="y2" value="" />
+			<input type="hidden" name="width" value="" />
+			<input type="hidden" name="height" value="" />
+		</form>
+		
+		<div class="cords"></div>
+		<div class="cords2"></div>
+
+		<script type="text/javascript" src="jquery.min.js"></script>
+		<script type="text/javascript" src="jquery.newselector.js"></script>
+
+		<script type="text/javascript">
+			$(document).ready(function () {
+				$('.image').imgSelector({
+					handles: true,
+					onSelectEnd: function (data) {
+						console.log(data);           
+					}
+				});
+				
+			});
+		</script>
+	</body>
+</html>

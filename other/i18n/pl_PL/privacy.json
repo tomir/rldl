@@ -1,0 +1,26 @@
+{
+	"User_account_and_privacy": "Konto użytkownika i prywatność",
+	"User_name": "Nazwa użytkownika",
+	"Email": "Adres E-mail",
+	"Delete_account": "Usuń konto",
+	"Log_out": "Wyloguj",
+	"Log_in": "Zaloguj",
+	"App_terms_and_privacy_policy": "Regulamin i polityka prywatności aplikcji",
+	"Hello": {
+		"m": "Cześć {{{actor}}}!",
+		"f": "Cześć {{{actor}}}!",
+		"default": "Cześć!"
+	},
+	"Log_in_to_manage_your_account": "Zaloguj się, aby zarządzać twoim kontem.",
+	"Not_specified": "nie podano",
+	"Accepted_campaign_terms": "Zaakceptowane regulaminy promocji",
+	"Login_using_your_favorite_platform": "Zaloguj się przez wybrany serwis.",
+	"Are_you_sure_you_want_to_delete_your_acount": "Czy na pewno chcesz usunąć konto?",
+	"Yes": "Tak",
+	"No": "Nie",
+	"Your_account_has_been_deleted": "Twoje konto zostało usunięte.",
+	"Close": "Zamknij",
+	"Following": "Obserwowane",
+	"Unfollow": "Usuń",
+	"Are_you_sure_you_want_to_unfollow": "Czy na pewno chcesz usunąć z obserwowanych?"
+}

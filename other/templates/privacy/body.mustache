@@ -1,0 +1,37 @@
+{{^user.login}}
+<div id="login" class="rows">
+	<div class="row">
+		<p>{{#i18n}}Log in to manage your account.{{/i18n}}</p>
+		<p><a href="#" data-action="login">{{#i18n}}Log in{{/i18n}}</a></p>
+	</div>
+</div>
+{{/user.login}}{{#user.login}}
+<div id="info" class="rows">
+	<div class="row">
+		{{#user.avatar}}<p><img class="avatar" src="{{user.avatar}}"></p>{{/user.avatar}}
+		<div class="table">
+			<div class="table-row">
+				<div class="table-cell text-right">
+					{{#i18n}}User name{{/i18n}}
+				</div>
+				<div class="table-cell text-left">
+					<strong>{{user.name}}</strong>
+				</div>
+			</div>
+			<div class="table-row">
+				<div class="table-cell text-right">
+					{{#i18n}}Email{{/i18n}}
+				</div>
+				<div class="table-cell text-left">
+					<strong>{{#user.email}}{{user.email}}{{/user.email}}</strong>{{^user.email}}<i>{{#i18n}}Not specified{{/i18n}}</i>{{/user.email}}
+				</div>
+			</div>
+		</div>
+		<p class="buttons">
+			<a class="button red" href="#" data-action="delete">{{#i18n}}Delete account{{/i18n}}</a>
+			<a class="button" href="#" data-action="logout">{{#i18n}}Log out{{/i18n}}</a>
+		</p>
+	</div>
+</div>
+<div id="follows"></div>
+{{/user.login}}

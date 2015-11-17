@@ -1,0 +1,26 @@
+{
+	"User_account_and_privacy": "User account and privacy",
+	"User_name": "User name",
+	"Email": "E-mail",
+	"Delete_account": "Delete account",
+	"Log_out": "Log out",
+	"Log_in": "Log in",
+	"App_terms_and_privacy_policy": "App terms and privacy policy",
+	"Hello": {
+		"m": "Hello {{{actor}}}!",
+		"f": "Hello {{{actor}}}!",
+		"default": "Hello!"
+	},
+	"Log_in_to_manage_your_account": "Log in to manage your account.",
+	"Not_specified": "not specified",
+	"Accepted_campaign_terms": "Accepted campaign terms",
+	"Login_using_your_favorite_platform": "Login using your favorite platform.",
+	"Are_you_sure_you_want_to_delete_your_acount": "Are you sure you want to delete your acount?",
+	"Yes": "Yes",
+	"No": "No",
+	"Your_account_has_been_deleted": "Your account has been deleted.",
+	"Close": "Close",
+	"Following": "Following",
+	"Unfollow": "Unfollow",
+	"Are_you_sure_you_want_to_unfollow": "Are you sure you want to unfollow?"
+}

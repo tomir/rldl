@@ -1,0 +1,10 @@
+{{#i18n}}{
+	"view": {
+		"actor": "{{user.first_name}}",
+		"brand": "{{{campaign.campaign_brand}}}",
+		"value": "{{^deal.variant.variant_cta}}{{^deal.is_voucher}}-{{/deal.is_voucher}}{{deal.variant.variant_value}}{{#deal.currency}} {{currency_code}}{{/deal.currency}}{{^deal.currency}}%{{/deal.currency}}{{/deal.variant.variant_cta}}"
+	}, "template": {
+		"string": "Your {{#deal.is_voucher}}voucher{{/deal.is_voucher}}{{^deal.is_voucher}}offer{{/deal.is_voucher}}{{#campaign.campaign_brand}} from brand{{/campaign.campaign_brand}}",
+		"variant": "{{user.gender}}"
+	}
+}{{/i18n}}

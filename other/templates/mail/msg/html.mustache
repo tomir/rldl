@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+	<head>
+		<meta charset="UTF-8">
+		<link href='https://fonts.googleapis.com/css?family=Open+Sans:300,400,600&subset=latin,greek,latin-ext,cyrillic,greek-ext,cyrillic-ext' rel='stylesheet' type='text/css'>
+	</head>
+	<body style="background-color:#fff;color:#000;font-size:18px;font-family:'Open Sans',Helvetica,Arial,sans-serif;font-weight:300;line-height:28px;-webkit-text-size-adjust:none;-webkit-backface-visibility:hidden;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;text-align:center;padding:48px;margin:0;">
+		<p style="color: #000;margin: 0;padding: 0">{{#i18n}}{
+		"view": {
+			"actor": "<span style=\"font-weight: 600\">{{user.first_name}}</span>",
+			"brand": "<span style=\"font-style: italic;\">{{{campaign.campaign_brand}}}</span>"
+		}, "template": {
+			"string": "New msg for you{{#campaign.campaign_brand}} from brand{{/campaign.campaign_brand}}",
+			"variant": "{{user.gender}}"
+		} }{{/i18n}}</p>
+		<div style="font-size: 14; line-height: 1.2em;margin: 48px auto;padding: 24px; width: 100%; max-width: 650px; min-width: 150px; box-sizing: border-box; border: 1px solid #fbfbfb; border-radius: 3px;box-shadow:0 0 1px 0 rgba(75,75,75,0.05);">
+			{{#html}}{{mail.msg}}{{/html}}
+		</div>
+		<p style="color: #000;margin: 0;padding: 0; font-size: 12px;">{{#i18n}}{
+		"view": {
+			"title": "<a href=\"{{campaign.campaign_url}}\" style=\"font-style: italic;\" target=\"_blank\">{{campaign.campaign_name}}</a>"
+		}, "template": {
+			"string": "Msg info",
+			"variant": "{{user.gender}}"
+		} }{{/i18n}}</p>
+		<div style="margin: 48px auto 0;padding: 0; width: 100%; max-width: 622px; min-width: 150px; border-top: 1px dashed #e3e3e3;font-size: 12px;line-height: 18px; color: #b2b2b2;">
+			<p style="margin: 0;padding: 6px 0 0;">{{#i18n}}Realdeal company details{{/i18n}}</p>
+			<p style="margin: 0;padding: 0;"><a href="{{campaign.campaign_terms_url}}" target="_blank" style="text-decoration: underline; color: #b2b2b2; margin: 0 3px;">{{#i18n}}Campaign terms of use{{/i18n}}</a> <a href="{{#config}}app_terms_url{{/config}}" target="_blank" style="text-decoration: underline; color: #b2b2b2; margin: 0 3px;">{{#i18n}}App terms and privacy policy{{/i18n}}</a> <a href="{{#config}}user_account_url{{/config}}" target="_blank" style="text-decoration: underline; color: #b2b2b2; margin: 0 3px;">{{#i18n}}Your account{{/i18n}}</a></p>
+		</div>
+	</body>
+</html>

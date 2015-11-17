@@ -1,0 +1,61 @@
+@import "mixins.less";
+@import "reset.less";
+
+body {
+	background-color: #fff;
+	color: #000;
+	font-size: 14px;
+	line-height: 1.5;
+	font-family: 'Open Sans', Helvetica, Arial, sans-serif;
+	font-weight: 300;
+	-webkit-text-size-adjust: none;
+	-webkit-backface-visibility: hidden;
+	text-align: center;
+}
+#stores {
+	padding: 20px;
+	h1 {
+		font-size: 18px;
+	}
+	ul {
+		display: block;
+		text-align: center;
+		margin: 5px;
+		font-size: 0;
+		color: transparent;
+		li {
+			display: inline-block;
+			a {
+				display: block;
+				height: 60px;
+				background-position: center center;
+				background-repeat: no-repeat;
+				background-size: contain;
+				margin: 5px;
+			}
+			&.ios a {
+				width: 203px;
+				background-image: url('/static/images/badges/AppStore/US.png');
+			}
+			&.play a {
+				width: 173px;
+				background-image: url('/static/images/badges/GooglePlay/english_get.png');
+			}
+			&.wp a {
+				width: 231px;
+				background-image: url('/static/images/badges/WindowsPhone/462x120_WPS_Download_blk.png');
+			}
+		}
+	}
+	&.locale-pl_PL ul li {
+		&.ios a {
+			background-image: url('/static/images/badges/AppStore/PL.png');
+		}
+		&.play a {
+			background-image: url('/static/images/badges/GooglePlay/polish_get.png');
+		}
+		&.wp a {
+			background-image: url('/static/images/badges/WindowsPhone/462x120_WPS_Download_pl-pl_blk.png');
+		}
+	}
+}

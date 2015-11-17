@@ -1,0 +1,65 @@
+/*
+ * imgAreaSelect default style
+ */
+
+.imgselector-resize {
+	background: #000;
+	width: 10px;
+	height: 10px;
+	cursor: pointer;
+	margin: -1px;
+	position: absolute;
+}
+
+.imgselector-border2 {
+    background: url(border-h.gif) repeat-x left top;
+}
+
+.imgselector-border3 {
+    background: url(border-v.gif) repeat-y right top;
+}
+
+.imgselector-border4 {
+    background: url(border-h.gif) repeat-x left bottom;
+}
+
+.imgselector-border1, .imgselector-border2,
+.imgselector-border3, .imgselector-border4 {
+    filter: alpha(opacity=50);
+	opacity: 0.5;
+}
+
+.imgselector-handle {
+    background-color: #fff;
+    border: dashed 1px #000;
+    filter: alpha(opacity=30);
+    opacity: 0.3;
+	position: absolute;
+}
+
+.imgselector-outer {
+    background-color: #000;
+    filter: alpha(opacity=50);
+    opacity: 0.5;
+}
+
+.imgselector-selection {  
+}
+
+.imgselector-close {  
+	top: 0px;
+	left: 0px;
+	margin: 10px 0 0 10px;
+	width: 50px;
+	height: 50px;
+	cursor: pointer;
+	position: absolute;
+}
+
+.imgselector-handle:hover{
+   background: #fff url(close.png) no-repeat left top;
+}
+
+.imgselector-box:hover{
+   background: url(close.png) no-repeat left top;
+}

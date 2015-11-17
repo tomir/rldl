@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:fb="http://www.facebook.com/2008/fbml">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+		<meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=IE9">
+		<link href="/favicon.ico" rel="icon" type="image/x-icon">
+		<link href="/favicon.ico" rel="shortcut icon" type="image/x-icon">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+		<script src="/static/js/vendor/jquery.ba-postmessage-min.js"></script>
+		<title>Realdeal</title>
+		<script>
+			var url=(window.location.hash).substr(1);
+			if (url.length>0) {
+				$.postMessage({
+					action: 'window.close'
+				}, decodeURIComponent(url.replace(/\+/g, ' ')), parent);
+				
+			}
+			window.setTimeout(function(){
+				window.close();
+				window.setTimeout(function(){
+					window.location='https://tryrealdeal.com';
+				}, 2000);
+			}, 2000);
+		</script>
+	</head>
+	<body>
+	</body>
+</html>

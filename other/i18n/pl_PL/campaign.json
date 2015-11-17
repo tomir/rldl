@@ -1,0 +1,104 @@
+{
+	"Offer_is_unavailable": "Oferta jest niedostępna.",
+	"This_offer_requires_sharing": "Oferta wymaga włączonego udostępniania.",
+	"Turn_on": "Włącz",
+	"Get_voucher": "Uzyskaj voucher",
+	"Get_deal": "Uzyskaj ofertę",
+	"Valid_to": "Ważne do",
+	"Show_more_offers": "Pokaż więcej ofert",
+	"Show_offer": "Pokaż ofertę",
+	"Do_you_want_to_find_out_about_next_one": "Chcesz dowiedzieć się pierwszy o kolejnej ofercie?",
+	"This_offer_has_come_to_an_end": {
+		"m": "Cześć {{{actor}}}, ta oferta nie jest już aktualna.",
+		"f": "Cześć {{{actor}}}, ta oferta nie jest już aktualna.",
+		"default": "Cześć! Ta oferta nie jest już aktualna."
+	},
+	"Get_notification": "Otrzymaj powiadomienie",
+	"Thanks_You_will_be_notified": "Dzięki. Będziemy Cię informować.",
+	"Campaign_terms_of_use": "Regulamin oferty",
+	"App_terms_and_privacy_policy": "Regulamin i polityka prywatności aplikacji",
+	"Log_out": "Wyloguj",
+	"Log_in": "Zaloguj",
+	"Login_using_your_favorite_platform": "Zaloguj się przez wybrany serwis.",
+	"You_must_log_in": "Musisz się zalogować.",
+	"Hello": {
+		"m": "Cześć {{{actor}}}!",
+		"f": "Cześć {{{actor}}}!",
+		"default": "Cześć!"
+	},
+	"Share": "Udostępnianie",
+	"Sharing_is_unavailable": "Udostępnianie niedostępne",
+	"Turn_on_sharing": "Włącz udostępnianie",
+	"Sharing_is_not_available_on_this_platform": "Udostępnianie nie jest dostępne po zalogowaniu przez konto na wybranej platformie.",
+	"This_option_requires_permission_to_publish_on_users_behalf": "Ta opcja wymaga udzielenia zezwolenia na publikcję. Kliknij OK, aby udzielić tych uprawnień.",
+	"Close": "Zamknij",
+	"OK": "OK",
+	"Your_offer": {
+		"m": "{{{actor}}}, Twoja oferta {{{value}}}",
+		"f": "{{{actor}}}, Twoja oferta {{{value}}}",
+		"default": "Twoja oferta {{{value}}}"
+	},
+	"Your_voucher": {
+		"m": "{{{actor}}}, Twój voucher {{{value}}}",
+		"f": "{{{actor}}}, Twój voucher {{{value}}}",
+		"default": "Twój vourcher {{{value}}}"
+	},
+	"Your_offer_from_brand": {
+		"m": "{{{actor}}}, Twoja oferta {{{value}}} od {{{brand}}}",
+		"f": "{{{actor}}}, Twoja oferta {{{value}}} od {{{brand}}}",
+		"default": "Twoja oferta {{{value}}} od {{{brand}}}"
+	},
+	"Your_voucher_from_brand": {
+		"m": "{{{actor}}}, Twój voucher {{{value}}} od {{{brand}}}",
+		"f": "{{{actor}}}, Twój voucher {{{value}}} od {{{brand}}}",
+		"default": "Twój vourcher {{{value}}} od {{{brand}}}"
+	},
+	"Your_offer_reminder_title": "Pamiętasz o Twojej ofercie?",
+	"Your_offer_from_brand_reminder_title": "Pamiętasz o Twojej ofercie od {{{brand}}}?",
+	"Your_offer_reminder": {
+		"m": "Cześć {{{actor}}}, czy skorzystałeś już z oferty?",
+		"f": "Cześć {{{actor}}}, czy skorzystałaś już z oferty?",
+		"default": "Cześć, czy skorzystałeś już z oferty?"
+	},
+	"Your_offer_from_brand_reminder": {
+		"m": "Cześć {{{actor}}}, czy skorzystałeś już z oferty od {{{brand}}}?",
+		"f": "Cześć {{{actor}}}, czy skorzystałaś już z oferty od {{{brand}}}?",
+		"default": "Cześć, czy skorzystałeś już z oferty od {{{brand}}}?"
+	},
+	"New_offer": "Nowa oferta dla Ciebie!",
+	"New_offer_from_brand": "{{{brand}}} ma dla Ciebie nową ofertę!",
+	"New_offer_for_you": "Cześć {{{actor}}}, nowa oferta dla Ciebie!",
+	"New_offer_for_you_from_brand": "Cześć {{{actor}}}, {{{brand}}} ma dla Ciebie nową ofertę!",
+	"New_msg_for_you": "Cześć {{{actor}}}, wiadmość dla Ciebie.",
+	"New_msg_for_you_from_brand": "Cześć {{{actor}}}, {{{brand}}} ma dla Ciebie wiadomość.",
+	"Msg_info": {
+		"m": "Wiadomość została wysłana do Ciebie, ponieważ pobrałeś ofertę {{{title}}}.",
+		"f": "Wiadomość została wysłana do Ciebie, ponieważ pobrałaś ofertę {{{title}}}.",
+		"default": "Wiadomość została wysłana do Ciebie, ponieważ pobrałeś ofertę {{{title}}}."
+	},
+	"Use_code": "Wykorzystaj kod",
+	"Write_post_body": "Dodaj treść udostępnienia...",
+	"Free_delivery": "Darmowa dostawa",
+	"Second_product_free": "Drugi produkt gratis", 
+	"Buy_one_get_one_free": "Kup jeden, drugi gratis",
+	"Get_discount": "Odbierz rabat", 
+	"Offer_of_the_month": "Oferta miesiąca", 
+	"Free_gifts": "Prezent gratis", 
+	"Get_gift": "Odbierz prezent", 
+	"Buy_now": "Kup teraz!", 
+	"Go_to_store": "Przejdź do sklepu", 
+	"Use_promo_codes": "Zrealizuj kod promocyjny", 
+	"Add_to_cart": "Dodaj do koszyka", 
+	"Proceed_to_checkout": "Złóż zamównienie", 
+	"Continue": "Kontynuuj", 
+	"Get_it_now": "Kup teraz!", 
+	"Browse_the_collection": "Przeglądaj kolekcję", 
+	"Explore_other_items": "Sprawdź inne produkty", 
+	"Read_more": "Dowiedz się więcej", 
+	"Download_now": "Pobierz teraz!", 
+	"Driving_directions": "Sprawdź dojazd",
+	"For_free": "Za darmo",
+	"Dont_miss_it": "Nie przegap!",
+	"Your_account": "Twoje konto",
+	"Realdeal_company_details": "Real Deal Sp. z o.o., ul. Ligocka 103, 40-568 Katowice, Polska, NIP 6342825534"
+}

@@ -1,0 +1,184 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+body {
+  background-color: #fff;
+  color: #000;
+  font-size: 14px;
+  line-height: 1.5;
+  font-family: 'Open Sans', Helvetica, Arial, sans-serif;
+  font-weight: 300;
+  -webkit-text-size-adjust: none;
+  -webkit-backface-visibility: hidden;
+  text-align: center;
+}
+#stores {
+  padding: 20px;
+}
+#stores h1 {
+  font-size: 18px;
+}
+#stores ul {
+  display: block;
+  text-align: center;
+  margin: 5px;
+  font-size: 0;
+  color: transparent;
+}
+#stores ul li {
+  display: inline-block;
+}
+#stores ul li a {
+  display: block;
+  height: 60px;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  margin: 5px;
+}
+#stores ul li.ios a {
+  width: 203px;
+  background-image: url('/static/images/badges/AppStore/US.png');
+}
+#stores ul li.play a {
+  width: 173px;
+  background-image: url('/static/images/badges/GooglePlay/english_get.png');
+}
+#stores ul li.wp a {
+  width: 231px;
+  background-image: url('/static/images/badges/WindowsPhone/462x120_WPS_Download_blk.png');
+}
+#stores.locale-pl_PL ul li.ios a {
+  background-image: url('/static/images/badges/AppStore/PL.png');
+}
+#stores.locale-pl_PL ul li.play a {
+  background-image: url('/static/images/badges/GooglePlay/polish_get.png');
+}
+#stores.locale-pl_PL ul li.wp a {
+  background-image: url('/static/images/badges/WindowsPhone/462x120_WPS_Download_pl-pl_blk.png');
+}

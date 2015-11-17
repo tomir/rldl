@@ -1,0 +1,48 @@
+@import "mixins.less";
+@import "reset.less";
+
+body {
+	background-color: #fff;
+	color: #000;
+	font-size: 14px;
+	line-height: 1.5;
+	font-family: 'Open Sans', Helvetica, Arial, sans-serif;
+	font-weight: 300;
+	-webkit-text-size-adjust: none;
+	-webkit-backface-visibility: hidden;
+	text-align: center;
+	background-color: #fff;
+}
+h1 {
+	padding-top: 40px;
+	font-size: 180px;
+	font-weight: 300;
+	line-height: 1;
+	color: #ccc;
+}
+p {
+	font-size: 14px;
+	color: #ccc;
+}
+div {
+	position: absolute;
+	bottom: 40px;
+	left: 0;
+	width: 100%;
+	font-size: 12px;
+	a {
+		display: inline-block;
+		color: #ccc;
+		border: 1px solid #eee;
+		padding: 5px 10px;
+		background-color: #fff;
+		transition: background-color 200ms ease, color 200ms ease;
+		border-radius: 5px;
+		text-decoration: none;
+		&:hover {
+			background-color: #eee;
+			color: #aaa;
+		}
+		
+	}
+}	

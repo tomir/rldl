@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+	<head>
+		<meta charset="UTF-8">
+		<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600&subset=latin,greek,latin-ext,cyrillic,greek-ext,cyrillic-ext" rel='stylesheet' type="text/css">
+	</head>
+	<body style="background-color:#fff;color:#000;font-size:18px;font-family:'Open Sans',Helvetica,Arial,sans-serif;font-weight:300;line-height:28px;-webkit-text-size-adjust:none;-webkit-backface-visibility:hidden;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;text-align:center;padding:48px;margin:0;">
+		<p style="color: #000;margin: 0;padding: 14px 0 0;">{{#i18n}}{
+			"view": {
+				"actor": "<span style=\"font-weight: 600\">{{user.first_name}}</span>",
+				"client": "<span style=\"font-style: italic;\">{{{client.client_name}}}</span>"
+			}, "template": {
+				"string": "Join in by clicking the link."
+			}
+		}{{/i18n}}</p>
+		<p style="margin: 0;padding: 6px 0 0;font-weight: 300;"><a href="{{client.invite_url}}" target="_blank" style="text-decoration: underline; color: #6a86fa">{{#i18n}}Go to the dashboard{{/i18n}}</a></p>
+		<div style="margin: 48px auto 0;padding: 0; width: 100%; max-width: 622px; min-width: 150px; border-top: 1px dashed #e3e3e3;font-size: 12px;line-height: 18px; color: #b2b2b2;">
+			<p style="margin: 0;padding: 6px 0 0;">{{#i18n}}Realdeal company details{{/i18n}}</p>
+			<p style="margin: 0;padding: 0;"><a href="{{#config}}app_terms_url{{/config}}" target="_blank" style="text-decoration: underline; color: #b2b2b2; margin: 0 3px;">{{#i18n}}App terms and privacy policy{{/i18n}}</a> <a href="{{#config}}user_account_url{{/config}}" target="_blank" style="text-decoration: underline; color: #b2b2b2; margin: 0 3px;">{{#i18n}}Your account{{/i18n}}</a></p>
+		</div>
+	</body>
+</html>

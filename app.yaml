@@ -1,0 +1,34 @@
+application: rd-gc-s1
+version: 1
+runtime: php55
+api_version: 1
+threadsafe: no
+
+handlers:
+- url: /static/(.*)
+  static_files: static/\1
+  upload: static/(.*)
+  
+- url: /favicon\.ico
+  static_files: favicon.ico
+  upload: favicon\.ico
+  
+- url: /robots\.txt
+  static_files: robots.txt
+  upload: robots\.txt
+
+- url: /crossdomain\.xml
+  static_files: crossdomain.xml
+  upload: crossdomain\.xml
+  
+- url: /_.js
+  static_files: static/js/RLDL-min.js
+  upload: static/js/RLDL-min\.js
+
+- url: .*
+  script: main.php
+
+pagespeed:
+  disabled_rewriters:
+  - ProxyJs
+  - DeferJs

@@ -1,0 +1,131 @@
+@import "mixins.less";
+@import "reset.less";
+
+body {
+	background-color: #fff;
+	color: #000;
+	font-size: 12px;
+	font-family: 'Open Sans', Helvetica, Arial, sans-serif;
+	font-weight: 400;
+	-webkit-text-size-adjust: none;
+	-webkit-backface-visibility: hidden;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	overflow:hidden;
+}
+a {
+	text-decoration: none;
+	transition: all .2s ease;
+	color: #6A86FA;
+}
+i {
+	font-style: italic;
+}
+strong {
+	font-weight: 600;
+}
+
+#head {
+	background-color: #fff;
+	position: relative;
+	z-index: 2;
+	box-shadow: 0px 0px 2px 0px rgba(50, 50, 50, 0.15);
+	text-align: center;
+	#info {
+		display: block;
+		line-height: 1.6em;
+		font-size: 18px;
+		font-weight: 300;
+		padding: 12px 0 0;
+		margin: 0 auto;
+	}
+	
+	#code {
+		padding-top: 12px;
+		height: 28px;
+		display: block;
+		strong {
+			font-family: 'Inconsolata', 'Andale Mono', Courier;
+			font-weight: 700;
+			font-size: 24px;
+			display: inline-block;
+			word-wrap: break-word;
+			color: #fff;
+			box-sizing: border-box;
+			border-radius: 2px;
+			padding: 8px 12px;
+			line-height: 22px;
+			text-align: center;
+			background-color: #6A86FA;
+			position: relative;
+			&:after {
+				display: block;
+				content: ' ';
+				overflow: hidden;
+				width: 0;
+				height: 0;
+				border: 4px transparent solid;
+				border-bottom-color: #6A86FA;
+				position: absolute;
+				top: -8px;
+				left: 50%;
+				margin-left: -2px;
+				pointer-events: none;
+			}
+		}
+	}
+}
+#body {
+	position: relative;
+	z-index: 1;
+	display: block;
+	border: 0;
+	height: 100%;
+}
+
+#close {
+	display: block;
+	position: fixed;
+	z-index: 101;
+	font-size: 0;
+	color: transparent;
+	width: 24px;
+	height: 24px;
+	border-radius: 12px;
+	border: 2px solid #000;
+	box-sizing: border-box;
+	right: 10px;
+	top: 10px;
+	opacity: 0.25;
+	&::after, &::before {
+		display: block;
+		background-color: #000;
+		transform: rotate(45deg);
+		position: absolute;
+		content: ' ';
+	}
+	&::after {
+		width: 16px;
+		height: 2px;
+		top: 9px;
+		left: 2px;
+	}
+	&::before {
+		width: 2px;
+		height: 16px;
+		top: 2px;
+		left: 9px;
+	}
+	&:hover {
+		opacity: 0.5;
+	}
+}
+
+@media screen and (max-width: 663px) {
+	#info {
+		.box-sizing();
+		width: 100% !important;
+		padding-left: 20px;
+		padding-right: 20px;
+	}
+}

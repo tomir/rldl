@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+		<meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=IE9">
+		<link href="/favicon.ico" rel="icon" type="image/x-icon">
+		<link href="/favicon.ico" rel="shortcut icon" type="image/x-icon">
+		<link href="//fonts.googleapis.com/css?family=Open+Sans:300italic,300,400,600&subset=latin,greek,latin-ext,cyrillic,greek-ext,cyrillic-ext" rel="stylesheet" type="text/css" data-noprefix="1">
+		<link href="/static/stylesheets/css/appstore.css" rel="stylesheet" media="all">
+		<link rel="apple-touch-icon-precomposed" href="/static/images/AppIcon60x60.png" />
+		<link rel="apple-touch-icon-precomposed" sizes="76x76" href="/static/images/AppIcon76x76.png" />
+		<link rel="apple-touch-icon-precomposed" sizes="120x120" href="/static/images/AppIcon60x60@2x.png" />
+		<link rel="apple-touch-icon-precomposed" sizes="152x152" href="/static/images/AppIcon76x76@2x.png" />
+		<title>{{#name}}{{name}} - {{/name}}Realdeal</title>
+		<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+		<script src="/static/js/vendor/prefixfree.min.js"></script>
+		<!--[if lt IE 9]><script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+	</head>
+	<body>
+		<div id="stores" class="locale-{{locale}}">
+			{{#name}}<h1>{{name}}</h1>{{/name}}
+			<ul>{{#stores}}
+				{{#ios}}<li class="ios"><a href="{{ios}}" target="_blank">Download on the App Store</a></li>{{/ios}}
+				{{^ios}}{{#ipad}}<li class="ios"><a href="{{ipad}}" target="_blank">Download on the App Store</a></li>{{/ipad}}{{/ios}}
+				{{#play}}<li class="play"><a href="{{play}}" target="_blank">Get it on Google Play</a></li>{{/play}}
+				{{#wp}}<li class="wp"><a href="{{wp}}" target="_blank">Download from Windows Phone Store</a></li>{{/wp}}
+			{{/stores}}</ul>
+		</div>
+	</body>
+</html>
